@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.image-container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 600vw;
+    animation: scroll-image 20s ease-in-out infinite;
+
+}
+
+.img-slide{
+    padding: 0;
+    margin: 0;
+}
+.slide{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes scroll-image {
+    0%, 5%, 100% {
+         transform: translateX(-500vw); 
+    }
+    10%, 15%, 90%, 95% {
+         transform: translateX(-400vw); 
+    }
+    20%, 25%, 80%, 85% {
+         transform: translateX(-300vw); 
+    }
+    30%, 35%, 70%, 75% {
+         transform: translateX(-200vw); 
+    }
+    40%, 45%, 60%, 65% {
+         transform: translateX(-100vw); 
+    }
+    50%, 55% {
+         transform: translateX(0vw);
+    }
+}

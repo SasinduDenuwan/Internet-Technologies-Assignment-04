@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    background-color: blue;
+    height: 100vh;
+    width: 100vw;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.small-circle{
+    background-color: gray;
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.big-circle{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 20px solid white;
+    border-top-color: red;
+    transition: rotate 1s;
+}
+
+.text{
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.small-circle:hover .big-circle {
+        
+    animation: circleRotate 1s ease-in-out; 
+    cursor: pointer;
+}
+
+@keyframes circleRotate {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}

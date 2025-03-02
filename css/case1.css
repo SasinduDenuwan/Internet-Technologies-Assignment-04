@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.text{
+    text-align: start;
+    padding-left: 60px;
+}
+
+.menu{
+    width: 750px;
+    height: 70px;
+    background-color: #903FE5;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    justify-content: end;
+    padding-right: 5px;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    left: -700px;
+    padding-left: 10px;
+
+    transition: transform 1s ease-in-out;
+}
+
+.menu-1:hover{
+    transform: translateX(695px);
+
+}
+
+.menu-2:hover{
+    transform: translateX(695px);
+
+}
+
+.menu-3:hover{
+    transform: translateX(695px);
+
+}
+
+.menu-4:hover{
+    transform: translateX(695px);
+
+}
+
+.menu-5:hover{
+    transform: translateX(695px);
+
+}
